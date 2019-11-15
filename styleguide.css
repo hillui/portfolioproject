@@ -19,12 +19,25 @@ header h1 {
   letter-spacing: 0.2em;
 }
 
-a:link, a:visited {
+#title a:link{
+  text-decoration: none;
+}
+
+#title a:hover {
+  text-decoration: none;
+}
+
+#title a:visited {
+  color: #486EDA;
+  text-decoration: none;
+}
+
+nav a:link, nav a:visited {
     color:#DC6B65;
     text-decoration:none;
 }
 
-a:hover {
+nav a:hover {
     color:#403429;
     text-decoration:none;
 }
@@ -216,3 +229,123 @@ nav a:hover,nav a:active, nav a:focus {
   #resources p {
     margin-bottom: 5rem;
   }
+
+  #bio img {
+    opacity: 90%;
+    background: #FEC8AF;
+    padding: 2rem;
+    width: 30%;
+    height: 30%;
+    float: left;
+    margin-right: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  #intro p {
+    width: 79%;
+  }
+
+  .textbox1{
+      flex:1;
+ }
+
+  .textbox1 p{
+      width:70%;
+ }
+
+ .textbox1 img{
+     width:10%;
+     padding: 0 0 0 0;
+}
+
+ .col-25 {
+     -ms-flex:25%;
+     flex:25%;
+     margin-bottom:3rem;
+     color: #403429;
+}
+
+.containerabout {
+    display: flex;
+}
+
+.containerabout div {
+    padding: 1rem;
+}
+
+.aboutimage{
+    flex:1;
+    text-align: center;
+}
+
+.aboutimage img{
+  background:#DFC66F;
+  opacity: 85%;
+  padding: 1.2rem;
+  width: 60%;
+  height: 82%;
+  margin-left: 0;
+}
+
+#contactpage {
+    padding-left: 2rem;
+}
+
+#uname, #unum {
+  padding-right: 15rem;
+}
+
+#mssg {
+    padding-right: 15rem;
+    padding-bottom: 6rem;
+}
+
+#submitbutton{
+    text-align: center;
+    background-color: white;
+    decoration: none;
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 22rem;
+    display:inline-block;
+    background-color:#94B1C3;
+    text-decoration:none;
+    transition-property:background-color;
+    transition-duration:.5s;
+    border-radius:8px;
+    padding:.25rem;
+    max-width:50%;
+    padding: .5rem;
+    margin-right: 5.5rem;
+}
+
+.textbox1 h2, .textbox label, .textbox input {
+  font-family: 'Montserrat';
+}
+
+label {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.images img {
+  padding-right: 4rem;
+  width: 25%;
+  height: 25%;
+}
+
+.images a img:hover{
+  filter: opacity(50%);
+}
+
+#intro video {
+  padding: 5rem;
+}
+
+#projectsimg img {
+  width: 80%;
+  height: 80%;
+}
