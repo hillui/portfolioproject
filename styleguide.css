@@ -345,7 +345,7 @@ label {
   padding: 5rem;
 }
 
-#projectsimg img {
+#projectsimg img, #projectsimg1 img {
   width: 80%;
   height: 80%;
 }
