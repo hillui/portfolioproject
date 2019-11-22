@@ -32,12 +32,12 @@ header h1 {
   text-decoration: none;
 }
 
-nav a:link, nav a:visited, .textbox1 a:link, .textbox1 a:visited {
+nav a:link, nav a:visited, .textbox1 a:link, .textbox1 a:visited, #text a:link, #text a:visited {
     color:#DC6B65;
     text-decoration:none;
 }
 
-nav a:hover, .textbox1 a:hover {
+nav a:hover, .textbox1 a:hover, #text a:hover {
     color:#403429;
     text-decoration:none;
 }
@@ -395,3 +395,23 @@ label {
   margin-top: 8rem;
   margin-left: 2rem;
 }
+
+@media only screen and (max-device-width: 480px) {
+        div#wrapper {
+            width: 400px;
+        }
+
+        div#header h1 {
+            font-size: 140%;
+        }
+
+        #content {
+            float: none;
+            width: 100%;
+        }
+
+        #navigation {
+            float:none;
+            width: auto;
+        }
+    }
