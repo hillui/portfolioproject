@@ -32,12 +32,12 @@ header h1 {
   text-decoration: none;
 }
 
-nav a:link, nav a:visited {
+nav a:link, nav a:visited, .textbox1 a:link, .textbox1 a:visited {
     color:#DC6B65;
     text-decoration:none;
 }
 
-nav a:hover {
+nav a:hover, .textbox1 a:hover {
     color:#403429;
     text-decoration:none;
 }
@@ -238,7 +238,7 @@ nav a:hover,nav a:active, nav a:focus {
     height: 30%;
     float: left;
     margin-right: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
   }
 
   #intro p {
@@ -276,14 +276,15 @@ nav a:hover,nav a:active, nav a:focus {
 .aboutimage{
     flex:1;
     text-align: center;
+    margin-bottom: 10rem;
 }
 
 .aboutimage img{
   background:#DFC66F;
   opacity: 85%;
   padding: 1.2rem;
-  width: 60%;
-  height: 82%;
+  height: 100%;
+  width: 75%;
   margin-left: 0;
 }
 
@@ -331,15 +332,55 @@ label {
     text-align: left;
 }
 
-.images img {
-  padding-right: 4rem;
+.container {
+  margin-bottom: 8rem;
+}
+
+.container img {
+  margin: 3%;
+  padding: 1rem;
+  padding-left: 4rem;
   width: 25%;
   height: 25%;
 }
 
-.images a img:hover{
+.container a img:hover{
   filter: opacity(50%);
 }
+
+/*.text, .text1, .text2 {
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+}
+
+.text {
+  color: #FEE86C;
+  top: 57%;
+  left: 24%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.text1 {
+  color: #4B6EDA;
+  top: 57%;
+  left: 48%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.text2 {
+  color: #DC6B65;
+  top: 107%;
+  left: 24%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+*/
 
 #intro video {
   padding: 5rem;
@@ -348,4 +389,9 @@ label {
 #projectsimg img, #projectsimg1 img {
   width: 80%;
   height: 80%;
+}
+
+.textbox1 {
+  margin-top: 8rem;
+  margin-left: 2rem;
 }
