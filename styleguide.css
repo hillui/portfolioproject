@@ -5,10 +5,6 @@ body {
   margin: auto;
 }
 
-h2, h3, h4 {
-  font-family: Futura;
-}
-
 header h1 {
   font-family: Futura;
   font-weight: bold;
@@ -19,49 +15,64 @@ header h1 {
   letter-spacing: 0.2em;
 }
 
-#title a:link{
-  text-decoration: none;
-}
-
-#title a:hover {
-  text-decoration: none;
-}
-
-#title a:visited {
+#title a:link, #title a:hover, #title a:visited {
   color: #486EDA;
   text-decoration: none;
 }
 
-nav a:link, nav a:visited, .textbox1 a:link, .textbox1 a:visited, #text a:link, #text a:visited {
-    color:#DC6B65;
-    text-decoration:none;
+#title a:hover {
+  border-bottom: 5px solid;
 }
 
-nav a:hover, .textbox1 a:hover, #text a:hover {
-    color:#403429;
-    text-decoration:none;
+.navmenu nav a:link, .navmenu nav a:visited,
+#text a:link, #text a:visited, #nav-link a, #nav-link a:visited,
+#resources a:hover, #resources a:visited, .contact a:link, .contact a:visited  {
+    color: #DC6B65;
+    text-decoration: none;
 }
 
-ul, li {
-    list-style:none;
-    margin:0;
-    padding:0;
-    color:#403429;
+.navmenu a:hover, #text a:hover, #nav-link a:hover, #resources a:hover, .contact a:hover {
+  border-bottom: 2px solid;
 }
 
-nav {
+.navmenu ul, .navmenu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #403429;
+}
+
+.navmenu #ig{
+  width: 22px;
+  margin-right: 2.55rem;
+}
+
+.navmenu #email{
+  width: 21.5px;
+  margin-right: 2.55rem;
+  margin-top: 2.2rem;
+}
+
+.navmenu nav, .navmenu img {
     margin-top: 0.5rem;
-    float: right;
+    position: fixed;
+    right: 5rem;
 }
 
-nav li {
+.navmenu nav li {
     display: vertical;
     padding: 0.2rem;
 }
 
-nav a:hover,nav a:active, nav a:focus {
+.navmenu nav a:hover, .navmenu nav a:active, .navmenu nav a:focus {
     border-bottom: 2px solid;
     color: #DC6B65;
+}
+
+.navmenu a img:hover {
+  border-right: 2px solid;
+  color: #DC6B65;
+  padding-right: 0.3rem;
 }
 
 .active_page{
@@ -69,12 +80,16 @@ nav a:hover,nav a:active, nav a:focus {
     color: #DC6B65;
 }
 
-#intro h2 {
+.content p {
+  margin-bottom: 0;
+}
+
+#intro h2, .about h2 {
   font-family: 'Montserrat';
   font-weight: bold;
 }
 
-#intro p {
+#intro p, .about p {
   padding: 2em;
   padding-top: 0;
   padding-left: auto;
@@ -85,8 +100,13 @@ nav a:hover,nav a:active, nav a:focus {
   width: 78%;
   }
 
+#intro {
+  margin-right: 5rem;
+}
+
 #border1 {
-    margin-bottom: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
     border-bottom: 1.2px dashed;
     border-color: #DC6B65;
     width: 92%;
@@ -95,16 +115,21 @@ nav a:hover,nav a:active, nav a:focus {
 
 #border2 {
     margin-top: 3em;
-    margin-bottom: 4em;
+    margin-bottom: 3em;
     border-bottom: 1.2px dotted;
     border-color: #81513D;
-    width: 100%;
+    width: 92%;
     float: left;
   }
 
   #typography h1, #colours h1, #inspiration h1, #interactive h1, #resources h1 {
     font-family: 'Montserrat';
     font-size: 2em;
+  }
+
+  #colours h1 {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 
   #Futura h2 {
@@ -120,6 +145,14 @@ nav a:hover,nav a:active, nav a:focus {
     font-size: 1rem;
   }
 
+  #Futura {
+    font-family: Futura;
+  }
+
+  #Futura, #Montserrat {
+    font-size: 2rem;
+  }
+
   #Montserrat h5 {
     font-family: 'Montserrat';
     color: #DC6B65;
@@ -131,13 +164,10 @@ nav a:hover,nav a:active, nav a:focus {
     font-size: 1rem;
   }
 
-  #Futura, #Montserrat {
-    font-size: 2rem;
-  }
-
   #Montserrat, #Montserrat a {
     font-family: "Montserrat";
     color: black;
+    text-decoration: none;
   }
 
   #headings h1 {
@@ -149,16 +179,12 @@ nav a:hover,nav a:active, nav a:focus {
     font-family: 'Montserrat';
   }
 
-  #headings h4 {
-    margin-bottom: 4rem;
-  }
-
   #headings h2 {
     color: #DC6B65;
   }
 
   #colours h1 {
-    margin-top: 3rem;
+    margin-top: 10rem;
   }
 
   #colours {
@@ -170,35 +196,23 @@ nav a:hover,nav a:active, nav a:focus {
 
   #colours p {
     color: white;
-    margin-left: 1.7em;
-    margin-top: 3.6em;
+    margin-top: 2em;
+    padding-top: 3.3rem;
   }
 
-  #colors1, #colors3, #colors4, #colors5, #colors6, #colors7,
-  #colors8, #colors9, #colors10, #colors11, #colors12, #colors13, #colors14 {
+  #colors1, #colors3, #colors4, #colors5 {
+    flex: 1;
+    text-align: center;
     height: 8rem;
     width: 8rem;
-    float: left;
-    margin-right: 3rem;
-    margin-bottom: 3em;
   }
 
-  #colors1 p, #colors2 p {
+  #colors1 p {
     color: black;
   }
 
   #colors1 {
     background-color: #FFFFFF;
-  }
-
-  #colors2 {
-    background-color: #FDF0E8;
-    height: 8rem;
-    width: 8rem;
-    float: left;
-    border: 1px solid;
-    margin-right: 3rem;
-    margin-bottom: 1em;
   }
 
   #colors3 {
@@ -214,7 +228,6 @@ nav a:hover,nav a:active, nav a:focus {
   }
 
   #interactive {
-    margin-top: 4rem;
   }
 
   #interactive h3, #nav-link h3, #typography h3 {
@@ -226,161 +239,83 @@ nav a:hover,nav a:active, nav a:focus {
     margin-bottom: 2rem;
   }
 
-  #resources p {
+  #nav-link img {
+    width: 21px;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+  }
+
+  #resources {
     margin-bottom: 5rem;
   }
+
+  #resources p {
+    margin-bottom: 1rem;
+  }
+
+  #border3 {
+      margin-top: 2em;
+      margin-bottom: 10em;
+      border-bottom: 1.2px dashed;
+      border-color: #DC6B65;
+      width: 92%;
+    }
 
   #bio img {
     opacity: 90%;
     background: #FEC8AF;
-    padding: 2rem;
-    width: 30%;
-    height: 30%;
-    float: left;
-    margin-right: 3rem;
-    margin-bottom: 10rem;
+    padding: 1.2rem;
+    max-width: 50%;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
   }
 
-  #intro p {
-    width: 79%;
-  }
-
-  .textbox1{
-      flex:1;
- }
-
-  .textbox1 p{
-      width:70%;
- }
-
- .textbox1 img{
-     width:10%;
-     padding: 0 0 0 0;
-}
-
- .col-25 {
-     -ms-flex:25%;
-     flex:25%;
-     margin-bottom:3rem;
-     color: #403429;
-}
-
-.containerabout {
-    display: flex;
-}
-
-.containerabout div {
-    padding: 1rem;
-}
-
-.aboutimage{
-    flex:1;
-    text-align: center;
-    margin-bottom: 10rem;
-}
-
-.aboutimage img{
-  background:#DFC66F;
-  opacity: 85%;
-  padding: 1.2rem;
-  height: 100%;
-  width: 75%;
-  margin-left: 0;
-}
-
-#contactpage {
-    padding-left: 2rem;
-}
-
-#uname, #unum {
-  padding-right: 15rem;
-}
-
-#mssg {
-    padding-right: 15rem;
-    padding-bottom: 6rem;
-}
-
-#submitbutton{
-    text-align: center;
-    background-color: white;
-    decoration: none;
-    font-family: 'Montserrat';
-    color: white;
-    font-size: 0.8rem;
-    margin-left: 22rem;
-    display:inline-block;
-    background-color:#94B1C3;
-    text-decoration:none;
-    transition-property:background-color;
-    transition-duration:.5s;
-    border-radius:8px;
-    padding:.25rem;
-    max-width:50%;
-    padding: .5rem;
-    margin-right: 5.5rem;
-}
-
-.textbox1 h2, .textbox label, .textbox input {
-  font-family: 'Montserrat';
-}
-
-label {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
-
-.container {
-  margin-bottom: 8rem;
-}
-
-.container img {
-  margin: 3%;
-  padding: 1rem;
-  padding-left: 4rem;
-  width: 25%;
-  height: 25%;
-}
-
-.container a img:hover{
-  filter: opacity(50%);
-}
-
-/*.text, .text1, .text2 {
-  font-size: 30px;
-  position: absolute;
+#aboutimage, #bio {
+  flex: 1;
   text-align: center;
 }
 
-.text {
-  color: #FEE86C;
-  top: 57%;
-  left: 24%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+#aboutimage img {
+  background: #DFC66F;
+  opacity: 85%;
+  padding: 1.2rem;
+  max-width: 70%;
+  margin-right: 5rem;
+  margin-bottom: 2rem;
 }
 
-.text1 {
-  color: #4B6EDA;
-  top: 57%;
-  left: 48%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.contact, .about {
+  display: flex;
+  margin-bottom: 5rem;
 }
 
-.text2 {
-  color: #DC6B65;
-  top: 107%;
-  left: 24%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.textbox1{
+flex:1;
 }
-*/
+
+.textbox1 p {
+  width:70%;
+}
+
+.container {
+  flex: 1;
+}
+
+.container img {
+  flex: 1;
+  margin: 3%;
+  padding: 1rem;
+  width: 250px;
+  height: 250px;
+}
+
+.container a:hover {
+  text-decoration: none;
+}
+
+.container a img:hover, .container a img:visited {
+  filter: opacity(50%);
+  text-decoration: none;
+}
 
 #intro video {
   padding: 5rem;
@@ -391,27 +326,99 @@ label {
   height: 80%;
 }
 
-.textbox1 {
-  margin-top: 8rem;
-  margin-left: 2rem;
+footer {
+  flex: 1;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: 12px;
 }
 
-@media only screen and (max-device-width: 480px) {
-        div#wrapper {
-            width: 400px;
-        }
+footer nav li {
+  display: inline;
+  padding: 1rem;
+}
 
-        div#header h1 {
-            font-size: 140%;
-        }
+footer ul, footer li {
+  list-style: none;
+}
 
-        #content {
-            float: none;
-            width: 100%;
-        }
+footer a:link, footer a:visited {
+  color: black;
+  text-decoration: none;
+}
 
-        #navigation {
-            float:none;
-            width: auto;
-        }
+footer a:hover {
+    color: #DC6B65;
+}
+
+@media screen and (min-width: 0px) and (max-width: 985px) {
+
+  .navmenu nav {
+    background: white;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 4.5rem;
+    position: fixed;
+  }
+  .contact {
+    display: block;
+    padding-top: 0rem;
+    padding-right: 5rem;
+  }
+
+  .container img {
+    display: vertical;
+    margin-right: 3rem;
+    width: 200px;
+    height: 200px;
+  }
+
+  .aboutimage img {
+    width: 200px;
+    height: 200px;
+  }
+
     }
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+
+    .about {
+      display: block;
+      padding-top: 0rem;
+      padding-right: 5rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .about img {
+      margin-right: 2rem;
+    }
+    .contact {
+      display: block;
+      padding-top: 0rem;
+      padding-right: 5rem;
+    }
+
+    .container img {
+      display: vertical;
+      margin-right: 3rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    .about {
+      display: block;
+      padding-top: 0rem;
+      padding-right: 10rem;
+    }
+    .about img {
+      margin-right: 10rem;
+    }
+    .textbox1 {
+      margin-left: 2rem;
+    }
+
+}
